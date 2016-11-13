@@ -1,4 +1,4 @@
-package module2;
+package module2.assignment_2_1;
 
 /**
  * Created by merkulovvs on 11/3/2016.

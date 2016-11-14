@@ -13,11 +13,15 @@ public class Course {
 
     }
 
-    public Course(int startDate, String name){
+    public Course(Date startDate, String name){
+        this.startDate = startDate;
+        this.name = name;
 
     }
     public Course(int courseDuration, String name, String teacherName){
-
+        this.courseDuration = courseDuration;
+        this.name = name;
+        this.teacherName = teacherName;
     }
 
     public Date getStartDate() {

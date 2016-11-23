@@ -6,7 +6,7 @@ package module3.assignment_3_3;
 public class Solution {
     public static void main(String[] args) {
         Course history = new Course();
-        Course math = new Course(11-10-2016,"Victor");
+        Course math = new Course(11/10/2016,"Victor");
         Course biology = new Course(3, "Johnes", "Galbraith");
         Course chemistry = new Course();
         Course english = new Course(20-04-2017, "Sam");

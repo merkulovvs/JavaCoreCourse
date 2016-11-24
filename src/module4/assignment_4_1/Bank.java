@@ -1,6 +1,6 @@
 package module4.assignment_4_1;
 
-import java.util.Currency;
+import module4.assignment_4_2.Currency;
 
 /**
  * Created by merkulovvs on 11/22/2016.

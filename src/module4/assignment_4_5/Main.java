@@ -39,8 +39,8 @@ public class Main {
         User user6 = new User(35255882, "Chang, Zu", 1000, 5,
                 "Miezu", 6000, chinaDevBank);
 
-        BankSystem.withdrawOfUser(user1, 200000);
-        BankSystem.fundUser(user3, 385);
+       // BankSystem.withdrawOfUser(user1, 200000);
+       // BankSystem.fundUser(user3, 385);
 
 
         System.out.println(user1);

@@ -7,8 +7,10 @@ import module4.assignment_4_3.User;
  */
 public class BankSystemImpl implements BankSystem {
     @Override
-    public void withdrawOfUser(User user, int amount) {
-
+    public void withdrawOfUser(User user, double amount) {
+        double balance = user.getBalance();
+        balance-= amount;
+        user.setBalance(balance);
     }
 
     @Override

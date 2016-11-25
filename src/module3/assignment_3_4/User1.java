@@ -3,7 +3,7 @@ package module3.assignment_3_4;
 /**
  * Created by merkulovvs on 11/10/2016.
  */
-public class User {
+public class User1 {
     private String name;
     private int balance;
     private int monthsOfEmployment;
@@ -11,7 +11,7 @@ public class User {
     private int salary;
     private String currency;
 
-    public User(String name, int balance, int monthsOfEmployment, String companyName, int salary, String currency) {
+    public User1(String name, int balance, int monthsOfEmployment, String companyName, int salary, String currency) {
         this.name = name;
         this.balance = balance;
         this.monthsOfEmployment = monthsOfEmployment;

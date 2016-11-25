@@ -3,6 +3,8 @@ package module4.assignment_4_3;
 import module4.assignment_4_1.Bank;
 import module4.assignment_4_1.USBank;
 
+import java.util.Arrays;
+
 /**
  * Created by merkulovvs on 11/22/2016.
  */
@@ -28,8 +30,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "Name: " + this.name + "\n" + "ID: " + this.id + "Balance: " + this.balance +"\n"
-                + "Bank " + this.bank;
+        return "Name: " + this.name + "\n" + "ID: " + this.id + "\n" + "Balance: " + this.balance +"\n"
+                + "Bank: " + bank.getClass().getSimpleName() + "\n";
     }
 
     public long getId() {

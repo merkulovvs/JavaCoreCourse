@@ -6,17 +6,20 @@ package module5;
 public class DAOImpl implements DAO {
     @Override
     public Room save(Room room) {
+        System.out.println("Room " + room.getId() + " is saved");
         return null;
     }
 
     @Override
     public boolean delete(Room room) {
-        return false;
+        System.out.println("Room " + room.getId() + " is deleted");
+        return true;
     }
 
     @Override
     public Room update(Room room) {
-        return null;
+        System.out.println("Room " + room.getId() + " is updated");
+        return room;
     }
 
     @Override

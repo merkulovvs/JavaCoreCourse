@@ -65,12 +65,12 @@ public class Main4 {
                 "--------------------------------------------------");
 
 
-        /*System.out.println(user1);
-        System.out.println(user2);
-        System.out.println(user3);
-        System.out.println(user4);
-        System.out.println(user5);
-        System.out.println(user6);*/
+        System.out.println(user1 + "---------------------------");
+        System.out.println(user2 + "---------------------------");
+        System.out.println(user3 + "---------------------------");
+        System.out.println(user4 + "---------------------------");
+        System.out.println(user5 + "---------------------------");
+        System.out.println(user6 + "---------------------------");
 
 
     }

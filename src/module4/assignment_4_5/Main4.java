@@ -8,11 +8,15 @@ import module4.assignment_4_3.User;
 import module4.assignment_4_4.BankSystem;
 import module4.assignment_4_4.BankSystemImpl;
 
+import java.lang.reflect.Array;
+
 
 /**
  * Created by merkulovvs on 11/24/2016.
  */
-public class Main {
+public class Main4 {
+
+
     public static void main(String[] args) {
         USBank bankOfAmerica = new USBank(1258005, "USA", Currency.USD, 30000,
                 100000, 100, 100000000);
@@ -39,16 +43,34 @@ public class Main {
         User user6 = new User(35255882, "Chang, Zu", 1000, 5,
                 "Miezu", 6000, chinaDevBank);
 
-       // BankSystem.withdrawOfUser(user1, 200000);
-       // BankSystem.fundUser(user3, 385);
+       BankSystemImpl test1 = new BankSystemImpl();
+       System.out.println("Before withdrawal user1 has " + user1.getBalance() + " on account.");
+       test1.withdrawOfUser(user1, 200000.0);
+       System.out.println("After withdrawal user1 has " + user1.getBalance() + " on account.\n" +
+               "--------------------------------------------------");
+       System.out.println("Before funding user3 has " + user3.getBalance() + " on account.");
+       test1.fundUser(user3, 385);
+       System.out.println("After funding user3 has " + user3.getBalance() + " on account.\n" +
+               "--------------------------------------------------");
+       System.out.println("User4 transfers funds to user5\n" +
+                           "Before transfer user4 has " + user4.getBalance() + " on account.\n" +
+                           "Before transfer user5 has " + user5.getBalance() + " on account.");
+       test1.transferMoney(user4,user5,8000);
+        System.out.println("After transfer user4 has " + user4.getBalance() + " on account.\n" +
+                           "After transfer user 5 has " + user5.getBalance() + " on account.\n" +
+                "--------------------------------------------------");
+        System.out.println("Before payday user6 has " + user6.getBalance() + " on account.");
+        test1.paySalary(user6);
+        System.out.println("After payday user6 has " + user6.getBalance() + " on account.\n" +
+                "--------------------------------------------------");
 
 
-        System.out.println(user1);
+        /*System.out.println(user1);
         System.out.println(user2);
         System.out.println(user3);
         System.out.println(user4);
         System.out.println(user5);
-        System.out.println(user6);
+        System.out.println(user6);*/
 
 
     }

@@ -1,5 +1,7 @@
 package module2.assignment_2_1;
 
+import module6.ArraysUtils;
+
 import java.util.Arrays;
 
 /**
@@ -10,13 +12,13 @@ public class SecondLargestOfIntArray {
         int[] arrayOfInts = {23, 12, 1, 3, 8, -3, 5, 19, -12, 2};
 
         System.out.println("The array is: " + (Arrays.toString(arrayOfInts)));
-        int arraySecondLargest = secondLargest(arrayOfInts);
+        int arraySecondLargest = ArraysUtils.secondLargest(arrayOfInts);
         System.out.println("The second largest value in this array is: " + arraySecondLargest);
     }
 
-    public static int secondLargest(int array[]) {
+    /*public static int secondLargest(int array[]) {
         Arrays.sort(array);
         int secondLargest = array[array.length - 2];
         return secondLargest;
-    }
+    }*/
 }

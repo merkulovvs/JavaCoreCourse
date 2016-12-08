@@ -1,5 +1,7 @@
 package module2.assignment_2_1;
 
+import module6.ArraysUtils;
+
 import java.util.Arrays;
 
 /**
@@ -10,13 +12,15 @@ public class ModulusOfIntArray {
         int [] arrayOfInts = {23, 12, 1, 3, 8, -3, 5, 19, -12, 2};
 
         System.out.println("The array is: " + (Arrays.toString(arrayOfInts)));
-        int arrayModulus = modulus(arrayOfInts);
+        int arrayModulus = ArraysUtils.modulus(arrayOfInts);
         System.out.println("The modulus of this array is: " + arrayModulus);
     }
-    public static int modulus(int array[]){
+    /*public static int modulus(int array[]){
         int modulus = array[0];
         for(int i=1; i<10; i++)
             modulus %= array[i];
         return modulus;
-    }
+    }*/
+
+
 }

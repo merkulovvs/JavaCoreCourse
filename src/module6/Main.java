@@ -1,5 +1,7 @@
 package module6;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.util.Arrays;
 
 /**
@@ -11,7 +13,8 @@ public class Main {
         System.out.println("The reverse array of array " + Arrays.toString(array) + " is array " +
                 Arrays.toString(ArraysUtils.reverse(array)));
 
-        
+        System.out.println("Even numbers in array " + Arrays.toString(array) + " are " +
+        Arrays.toString(ArraysUtils.findEvenElements(array)));
 
 
     }

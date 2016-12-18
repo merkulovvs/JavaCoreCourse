@@ -1,6 +1,8 @@
 package module7;
 
+import java.util.ArrayList;
 import java.util.Currency;
+import java.util.List;
 import java.util.Locale;
 
 /**
@@ -39,6 +41,21 @@ public class Main {
                 "Amazon", user9);
         Order order10 = new Order(10, 30000, Currency.getInstance(Locale.US), "BMW",
                 "Car Dealer", user10);
+
+        List<Order> orders = new ArrayList<>();
+
+        orders.add(order1);
+        orders.add(order2);
+        orders.add(order3);
+        orders.add(order4);
+        orders.add(order5);
+        orders.add(order6);
+        orders.add(order7);
+        orders.add(order8);
+        orders.add(order9);
+        orders.add(order10);
+
+
 
 
 
